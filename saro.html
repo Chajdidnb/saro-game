@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Master Skill Development | Skill-Based IT Training Institute</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+scroll-behavior:smooth;
+background:#0f0f0f;
+color:white;
+}
+
+/* NAVBAR */
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f2fe;
+}
+
+/* HERO */
+#home{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(-45deg,#1f1c2c,#928dab,#0f2027,#2c5364);
+background-size:400% 400%;
+animation:gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+#home h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+#home p{
+width:60%;
+font-size:20px;
+margin-bottom:30px;
+color:#ddd;
+}
+
+.btn{
+padding:12px 35px;
+border-radius:30px;
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+color:white;
+text-decoration:none;
+transition:0.4s;
+box-shadow:0 0 20px rgba(0,242,254,0.6);
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 30px rgba(0,242,254,1);
+}
+
+/* SECTIONS */
+section{
+padding:100px 8%;
+text-align:center;
+}
+
+h1{
+margin-bottom:20px;
+}
+
+p{
+line-height:1.6;
+}
+
+/* ABOUT */
+#about{
+background:#111;
+}
+
+#about p{
+max-width:900px;
+margin:20px auto;
+color:#ccc;
+}
+
+/* CONTAINERS */
+.container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:50px;
+}
+
+/* CARDS */
+.card{
+background:#1a1a1a;
+padding:30px;
+width:280px;
+border-radius:20px;
+transition:0.4s;
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-15px);
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+color:black;
+}
+
+/* PRICING */
+#pricing{
+background:#0f0f0f;
+}
+
+.price-card{
+background:#1a1a1a;
+padding:40px;
+width:300px;
+border-radius:20px;
+transition:0.4s;
+}
+
+.price-card:hover{
+transform:scale(1.05);
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+color:black;
+}
+
+.popular{
+border:3px solid #00f2fe;
+}
+
+.price{
+font-size:35px;
+margin:20px 0;
+}
+
+/* OFFER */
+#offer{
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+color:black;
+font-size:24px;
+font-weight:bold;
+}
+
+/* FORM */
+#contact{
+background:#111;
+}
+
+form{
+max-width:450px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+}
+
+input,textarea{
+margin:12px 0;
+padding:12px;
+border-radius:8px;
+border:none;
+background:#1f1f1f;
+color:white;
+}
+
+input:focus,textarea:focus{
+outline:2px solid #00f2fe;
+}
+
+input[type="submit"]{
+background:linear-gradient(45deg,#00f2fe,#4facfe);
+cursor:pointer;
+transition:0.4s;
+}
+
+input[type="submit"]:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:25px;
+color:#777;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+#home h1{font-size:35px;}
+#home p{width:90%;}
+nav{flex-direction:column;}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<img class="logo" src="https://via.placeholder.com/150x50/00f2fe/000000?text=MSD" alt="Master Skill Development Logo">
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#company">Company</a>
+<a href="#course">Course</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Register</a>
+</div>
+</nav>
+
+<section id="home">
+<h1>Master Skill Development</h1>
+<p>Transform your career with industry-ready IT training, real-world projects and placement support.</p>
+<a href="#pricing" class="btn">Enroll Now</a>
+</section>
+
+<section id="about">
+<h1>About Us</h1>
+<p>Master Skill Development is a professional skill-based IT training institute dedicated to providing high-quality practical education. We focus on building real-time industry skills that make students job-ready.</p>
+</section>
+
+<section id="company">
+<h1>Company Details</h1>
+
+<div class="container">
+<div class="card">
+<h3>🎯 Mission</h3>
+<p>Empowering students with practical knowledge and real-world technical skills.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Vision</h3>
+<p>To become India's most trusted skill development academy.</p>
+</div>
+
+<div class="card">
+<h3>💡 Why Choose Us?</h3>
+<p>• Expert Trainers<br>• Live Projects<br>• Placement Support<br>• Affordable Fees</p>
+</div>
+</div>
+
+<div class="container">
+<div class="card">
+<h3 id="students-trained">0</h3>
+<p>Students Trained</p>
+</div>
+
+<div class="card">
+<h3 id="students-placed">0</h3>
+<p>Students Placed</p>
+</div>
+
+<div class="card">
+<h3>3+ Years</h3>
+<p>Training Experience</p>
+</div>
+</div>
+
+</section>
+
+<section id="course">
+<h1>What You Will Learn</h1>
+<div class="container">
+<div class="card">
+<h3>HTML & CSS</h3>
+<p>Build responsive websites from scratch.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Create dynamic and interactive web applications.</p>
+</div>
+
+<div class="card">
+<h3>Deployment</h3>
+<p>Host projects live using GitHub & hosting platforms.</p>
+</div>
+</div>
+</section>
+
+<section id="pricing">
+<h1>Course Pricing</h1>
+<div class="container">
+<div class="price-card">
+<h3>Basic</h3>
+<div class="price">₹4,999</div>
+<p>Recorded Classes</p>
+<p>HTML & CSS</p>
+</div>
+
+<div class="price-card popular">
+<h3>Pro ⭐</h3>
+<div class="price">₹9,999</div>
+<p>Live Classes</p>
+<p>Projects + Certificate</p>
+</div>
+
+<div class="price-card">
+<h3>Premium</h3>
+<div class="price">₹14,999</div>
+<p>1-on-1 Mentorship</p>
+<p>Placement Support</p>
+</div>
+</div>
+</section>
+
+<section id="offer">
+🎉 20% Early Bird Discount for First 50 Students!
+</section>
+
+<section id="contact">
+<h1>Register Now</h1>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Message"></textarea>
+<input type="submit" value="Submit">
+</form>
+</section>
+
+<footer>
+© 2026 Master Skill Development | All Rights Reserved | Designed by SARAN VEL
+</footer>
+
+<script>
+// Live Counter Animation for Statistics
+function animateCounter(elementId, target, duration) {
+    const element = document.getElementById(elementId);
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target + '+';
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+
+// Intersection Observer for triggering animations when elements come into view
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: "0px"
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Animate counters when company section is visible
+            if (entry.target.id === 'company') {
+                animateCounter('students-trained', 500, 2000);
+                animateCounter('students-placed', 150, 2000);
+            }
+            // Add slide-in animation to cards
+            entry.target.querySelectorAll('.card, .price-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe sections for animations
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+});
+
+// Smooth scroll for navigation links
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+// Form submission animation
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const submitBtn = this.querySelector('input[type="submit"]');
+    const originalText = submitBtn.value;
+    
+    submitBtn.value = 'Sending...';
+    submitBtn.style.background = 'linear-gradient(45deg, #00c6fb, #005bea)';
+    
+    setTimeout(() => {
+        submitBtn.value = '✓ Sent Successfully!';
+        submitBtn.style.background = 'linear-gradient(45deg, #00b09b, #96c93d)';
+        
+        // Reset form after 2 seconds
+        setTimeout(() => {
+            this.reset();
+            submitBtn.value = originalText;
+            submitBtn.style.background = 'linear-gradient(45deg, #00f2fe, #4facfe)';
+        }, 2000);
+    }, 1500);
+});
+
+// Add floating particles background to hero section
+const heroSection = document.getElementById('home');
+const particleCount = 30;
+
+for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.style.cssText = `
+        position: absolute;
+        width: ${Math.random() * 5 + 2}px;
+        height: ${Math.random() * 5 + 2}px;
+        background: rgba(255, 255, 255, ${Math.random() * 0.5 + 0.2});
+        border-radius: 50%;
+        left: ${Math.random() * 100}%;
+        top: ${Math.random() * 100}%;
+        animation: float ${Math.random() * 10 + 5}s linear infinite;
+        pointer-events: none;
+    `;
+    heroSection.appendChild(particle);
+}
+
+// Add keyframes for floating animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes float {
+        0% {
+            transform: translateY(0) rotate(0deg);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh) rotate(720deg);
+            opacity: 0;
+        }
+    }
+    
+    .card, .price-card {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
+document.head.appendChild(style);
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+        nav.style.background = 'rgba(0, 0, 0, 0.9)';
+        nav.style.padding = '10px 8%';
+    } else {
+        nav.style.background = 'rgba(0, 0, 0, 0.7)';
+        nav.style.padding = '15px 8%';
+    }
+});
+</script>
+
+</body>
+</html>
